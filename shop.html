@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini shop cart</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">SHOPMIKE &nbsp; <i class="fas fa-cart-arrow-down"></i></span>
+            <nav>
+
+                <ul class="nav-area">
+                    <li><a href="#0">HOME</a></li>
+                    <li><a href="#0">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div class="row justify-content-start">
+            <div class="col-md-4" >
+                <div class="card1">
+                    <div class="card text-dark bg-white mb-3" style="width: 18rem; height: 26rem;">
+                        <div class="card-body">
+                           <img src="img/cake.jpg" alt="cake" height="100">
+                           <h3 class="card-title">Choccolate Cake</h3>
+                           <h4 class="card-text">$50</h4>
+                           <span onclick="colorIt('1')" id="1" class="far fa-heart"></span>
+                           <a class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" >
+                <div class="card1">
+                    <div class="card text-dark bg-white mb-3"  style="width: 18rem; height: 26rem;">
+                        <div class="card-body">
+                           <img src="img/hamburger.jpg" alt="burger" height="100">
+                           <h3 class="card-title">Burger</h3>
+                           <h4 class="card-text">$2</h4>
+                           <span id="2" onclick="colorIt('2')" class="far fa-heart"></span>
+                           <a class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" >
+                <div class="card1">
+                    <div class="card text-dark bg-white mb-3"  style="width: 18rem; ">
+                        <div class="card-body">
+                           <img src="img/jeans.jpg" alt="jean" height="100">
+                           <h3 class="card-title">Blue jean</h3>
+                           <h4 class="card-text">$20</h4>
+                           <span id="3" onclick="colorIt('3')" class="far fa-heart"></span>
+                           <a class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" >
+                <div class="card1">
+                    <div class="card text-dark bg-white mb-3"  style="width: 18rem; height: 26rem;">
+                        <div class="card-body">
+                           <img src="img/nike.jpg" alt="Nike" height="100">
+                           <h3 class="card-title">Nike AirMax</h3>
+                           <h4 class="card-text">$87</h4>
+                           <span id="4" onclick="colorIt('4')" class="far fa-heart"></span>
+                           <a class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" >
+                <div class="card1">
+                    <div class="card text-dark bg-white mb-3"  style="width: 18rem; ">
+                        <div class="card-body">
+                           <img src="img/whiteshirt.png" alt="shirt" height="100">
+                           <h3 class="card-title">Collar shirt</h3>
+                           <h4 class="card-text">$20</h4>
+                           <span id="5" onclick="colorIt('5')" class="far fa-heart"></span>
+                           <a class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" >
+                <div class="card1">
+                    <div class="card text-dark bg-white mb-3"  style="width: 18rem; height: 26rem;">
+                        <div class="card-body">
+                           <img src="img/tshirt.jpg" alt="T's" height="100">
+                           <h3 class="card-title">Black top</h3>
+                           <h4 class="card-text">$10</h4>
+                           <span id="6" onclick="colorIt('6')" class="far fa-heart"></span>
+                           <a class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Cart-Container">
+            <div class="row justify-content-start">
+                <div class="col-md-12" >
+                    <table class="CartOne">
+                   <!-- <tr>
+                        <td><img src="img/tshirt.jpg" class="cartImg" alt="T's" height="100"></td>
+                        <td><h3 class="Item-name">Black top</h3></td>
+                        <td><h4 class="Item-Price">$10</h4></td>
+                        <td><input type = 'number' class = 'num' value = '1'></td>
+                        <td><h4 class="Total-Price">$10</h4></td>
+                        <td><button class="btn btn-danger" type= "buttom">Remove Item</button></td> 
+                    </tr>        -->            
+                    </table>
+                    
+                    <table class="CartTwo">
+                        <tr>
+                            <td><h3 class="Total-name">Total</h3></td>
+                            <td><h3 class="Alltime-Price">$0</h3></td>
+                        </tr>
+                    </table>
+                </div> 
+            </div>
+         </div>
+    </main>
+
+    <script src="shop.js"></script>
+</body>
+</html>
