@@ -1,65 +1,68 @@
-.nav-area{
-    list-style: none;
+.nav-area {
+  list-style: none;
 }
 
-.nav-area li{
-    display: inline-block;
-    padding: 0px 15px;
+.nav-area li {
+  display: inline-block;
+  padding: 0px 15px;
 }
 
-.nav-area li a{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
+.nav-area li a {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
 }
-
 
 .main-container {
-    margin-top: 5%;
-    margin-left: 10%;
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
-.card-body{
-    text-align: center;     
+.card-body {
+  text-align: center;
 }
 
 .far {
-    float: left;
-    font-size: 25px;
+  float: left;
+  font-size: 25px;
 }
 
 .Cart-Container {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 td {
-    padding-right:100px;
+  padding-right: 100px;
 }
 
 .CartTwo {
-    margin-top: 5%;
-    float: right;
+  margin-top: 5%;
+  float: right;
 }
 
-.num{
-    width: 80px;
-    height: 30px;
-    border: 3px solid black;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 5px;
+.num {
+  width: 80px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
 }
 
-.fa-heart:hover{
-    color: #f50057;
-    transition: .4s;
+.fa-heart {
+  background: transparent;
+  color: grey;
+  float: left;
+  font-size: 30px;
 }
 
-.fas{
-    color: #f50057;
+.fa-heart:hover {
+  color:rgba(255, 0, 0, 0.918);
+  transition: 0.4s;
 }
 
-.Total-name, .Alltime-Price{
-    font-weight: bolder;
+.Total-name,
+.Alltime-Price {
+  font-weight: bolder;
 }

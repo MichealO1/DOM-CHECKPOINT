@@ -24,7 +24,7 @@ function addToCart(event){
     let itemName = btnParent.children[1].innerText
     let itemPrice =btnParent.children[2].innerText
 
-    itemContainer.innerHTML = `
+    itemContainer.innerHTML = ` 
     
     <td><img src=${itemImage} class="cartImg" alt="T's" height="100"></td>
     <td><h3 class="Item-name">${itemName}</h3></td>
@@ -32,6 +32,7 @@ function addToCart(event){
     <td><input type = 'number' class = 'num' value = '1'></td>  
     <td><h4 class="Total-Price">${itemPrice}</h4></td>
     <td><button class="btn btn-danger" type= "buttom">Remove Item</button></td> 
+
     
 `
     cartContainer.append(itemContainer)
@@ -86,7 +87,7 @@ function deleteCart(event){
     
 } 
 
-
+/*
 function colorIt(id) {
     //var likeBtn = document.getElementById(id).setAttribute("class", "fas fa-heart");
     var likeBtn = document.getElementById(id)
@@ -96,5 +97,17 @@ function colorIt(id) {
     }else{
         likeBtn.classList.remove("fas");
         likeBtn.classList.add("far");
+    }
+}*/
+
+
+
+function colorIt(id) {
+    var likeBtn = document.getElementById(id);
+    if (likeBtn.style.color =="red") {
+        likeBtn.style.color = "grey"
+    }
+    else{
+        likeBtn.style.color = "red"
     }
 }
