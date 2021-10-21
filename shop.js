@@ -40,6 +40,14 @@ function addToCart(event){
 
     
 `
+
+    var cartItemNames = document.getElementsByClassName('Item-name')
+    for (let i = 0; i < cartItemNames.length; i++){
+        if (cartItemNames[i].innerText == itemName) {
+            alert('Item has been added to cart')
+            return
+          }
+    }
     cartContainer.append(itemContainer)
 
 
